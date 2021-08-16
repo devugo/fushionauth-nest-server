@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="http://localhost:9011/oauth2/authorize" method="POST" className="full">
+        <input type="hidden" name="client_id" value="{{clientID}}" />
+        <input type="hidden" name="code_challenge" value="{{code_challenge}}" />
+        <input type="hidden" name="code_challenge_method" value="{{code_challenge_method}}" />
+        <input type="hidden" name="metaData.device.name" value="Windows Chrome" />
+        <input type="hidden" name="metaData.device.type" value="BROWSER" />
+        <input type="hidden" name="nonce" value="" />
+        <input type="hidden" name="pendingIdPLinkId" value="" />
+        <input type="hidden" name="redirect_uri" value="{{redirect_uri}}" />
+        <input type="hidden" name="response_mode" value="" />
+        <input type="hidden" name="response_type" value="{{response_type}}" />
+        <input type="hidden" name="scope" value="" />
+        <input type="hidden" name="state" value="" />
+        <input type="hidden" name="tenantId" value="b4664d09-f361-11eb-bc02-f80dac7ca44e" />
+        <input type="hidden" name="timezone" value="Africa/Lagos" />
+        <input type="hidden" name="user_code" value="" />
+        <input type="hidden" name="showPasswordField" value="true" />
+
+        <fieldset>
+          <div className="form-row">
+            <div className="input-addon-group">
+              <span className="icon"><i className="fa fa-user"></i></span>
+              <input id="loginId" type="text" name="loginId" className="" autoCapitalize="none" autoComplete="on" autoCorrect="off" spellCheck="false" placeholder="Email" />
+            </div>
+          </div>
+          <div className="form-row">
+            <div className="input-addon-group">
+              <span className="icon"><i className="fa fa-lock"></i></span>
+                <input id="password" type="password" name="password" className="" autoCapitalize="none" autoComplete="current-password" autoCorrect="off" spellCheck="false" placeholder="Password" />
+            </div>
+          </div>
+        </fieldset>
+
+        <div className="form-row">
+          <button type="submit" className="blue button"><i className="fa fa-key"></i> Submit</button>
+          <a href="/password/forgot?tenantId=b4664d09-f361-11eb-bc02-f80dac7ca44e&amp;client_id=928cd828-c6f8-4143-98a4-e6ced00ff55a&amp;nonce=&amp;pendingIdPLinkId=&amp;redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Foauth-callback&amp;response_mode=&amp;response_type=code&amp;scope=&amp;state=&amp;timezone=Africa%2FLagos&amp;metaData.device.name=Windows%20Chrome&amp;metaData.device.type=BROWSER&amp;code_challenge=B-TMgcwcGHN3fmByhiROlSlPloQdcTQTYEmv0XQqLhs&amp;code_challenge_method=S256&amp;user_code=">
+            Forgot your password?
+          </a>
+        </div>
+      </form>
+</body>
+</html>
